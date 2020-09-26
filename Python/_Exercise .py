@@ -145,13 +145,18 @@ findDog('Is there a dog here?')
 
 # ** Create a function that counts the number of times the word "dog" occurs in a string. Again ignore edge cases. **
 
-# In[30]:
+# In[34]:
 
 
+def countDog(string):
+        count = 0
+        for word in string.lower().split():
+            if (word == 'dog'):
+                count +=1
+        return count
 
 
-
-# In[31]:
+# In[35]:
 
 
 countDog('This dog runs faster than the other dog dude!')
